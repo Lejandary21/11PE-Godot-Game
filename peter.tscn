@@ -1,0 +1,69 @@
+[gd_scene load_steps=10 format=3 uid="uid://dp6b0hkufeoq6"]
+
+[ext_resource type="Texture2D" uid="uid://dfkyuvxeue2n5" path="res://Free-Homeless-Character-Sprite-Sheets-Pixel-Art/Homeless_3/Idle.png" id="1_wa30p"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7qbqb"]
+atlas = ExtResource("1_wa30p")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_772ck"]
+atlas = ExtResource("1_wa30p")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gjeh4"]
+atlas = ExtResource("1_wa30p")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ipkxk"]
+atlas = ExtResource("1_wa30p")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a7tv1"]
+atlas = ExtResource("1_wa30p")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_thyf7"]
+atlas = ExtResource("1_wa30p")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fuhx8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7qbqb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_772ck")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gjeh4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ipkxk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a7tv1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_thyf7")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_n38s1"]
+radius = 15.0
+height = 66.0
+
+[node name="Peter" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1, -65)
+sprite_frames = SubResource("SpriteFrames_fuhx8")
+animation = &"new_animation"
+frame_progress = 0.0526538
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D"]
+position = Vector2(-1, 33)
+shape = SubResource("CapsuleShape2D_n38s1")
