@@ -1320,10 +1320,11 @@ sources/3 = SubResource("TileSetAtlasSource_ohncc")
 [node name="Peter" parent="." instance=ExtResource("1_jtf6k")]
 position = Vector2(-2, 1)
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(74, -81)
-zoom = Vector2(4, 4)
+[node name="Camera2D" type="Camera2D" parent="Peter"]
+position = Vector2(76, -82)
+zoom = Vector2(2, 2)
 position_smoothing_enabled = true
+position_smoothing_speed = 9.0
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
