@@ -22318,21 +22318,6 @@ _data = {
 "arkho euta": SubResource("Animation_pckb7")
 }
 
-[sub_resource type="Animation" id="Animation_te10n"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(11520, -1172)]
-}
-
 [sub_resource type="Animation" id="Animation_tkqnr"]
 resource_name = "new_animation"
 length = 2.0
@@ -22348,6 +22333,21 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(11520, -1172), Vector2(11744, -1172)]
+}
+
+[sub_resource type="Animation" id="Animation_te10n"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(11520, -1172)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_xx7ve"]
@@ -22432,21 +22432,6 @@ _data = {
 "new_animation": SubResource("Animation_6td2e")
 }
 
-[sub_resource type="Animation" id="Animation_gw7ah"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(12855, -1088)]
-}
-
 [sub_resource type="Animation" id="Animation_k2lch"]
 resource_name = "new_animation"
 length = 0.6
@@ -22462,6 +22447,21 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Vector2(12855, -1136), Vector2(12855, -1040), Vector2(12855, -1136)]
+}
+
+[sub_resource type="Animation" id="Animation_gw7ah"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(12855, -1088)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_kya66"]
