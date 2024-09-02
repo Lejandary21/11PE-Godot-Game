@@ -1,16 +1,16 @@
-[gd_scene load_steps=46 format=3 uid="uid://cm1d6e2iudwn5"]
+[gd_scene load_steps=47 format=3 uid="uid://cm1d6e2iudwn5"]
 
 [ext_resource type="Texture2D" uid="uid://c0ofkwwie1odo" path="res://assets/brackeys_platformer_assets/sprites/platforms.png" id="1_hdlau"]
 [ext_resource type="PackedScene" uid="uid://dp6b0hkufeoq6" path="res://peter.tscn" id="1_jtf6k"]
-[ext_resource type="Texture2D" uid="uid://btec1kmr6odhp" path="res://pixlr-image-generator-66bd23bf5f6fa52a39d80218 (1).png" id="2_6jo8d"]
-[ext_resource type="Texture2D" uid="uid://vcv3e671u08y" path="res://assets/brackeys_platformer_assets/sprites/Textures-16.png" id="2_tdfri"]
+[ext_resource type="Texture2D" uid="uid://btec1kmr6odhp" path="res://assets/pixlr-image-generator-66bd23bf5f6fa52a39d80218 (1).png" id="2_6jo8d"]
+[ext_resource type="Texture2D" uid="uid://oce0e1rc3qkx" path="res://assets/brackeys_platformer_assets/sprites/Textures-16.png" id="2_tdfri"]
 [ext_resource type="Texture2D" uid="uid://ymc6fpu24krx" path="res://assets/brackeys_platformer_assets/sprites/bg 4.jpg" id="2_wlmu4"]
 [ext_resource type="Texture2D" uid="uid://bgyi8h0dyvphx" path="res://assets/brackeys_platformer_assets/sprites/world_tileset.png" id="4_rcp4s"]
 [ext_resource type="Texture2D" uid="uid://vbqla2l051mr" path="res://assets/brackeys_platformer_assets/sprites/OldDungeon320X180.png" id="4_xeewh"]
 [ext_resource type="Texture2D" uid="uid://dylr3jxce6eh1" path="res://assets/brackeys_platformer_assets/sprites/1985_reference.png" id="6_pnl8a"]
 [ext_resource type="PackedScene" uid="uid://cab13llthy138" path="res://scenes/platform.tscn" id="7_43s0p"]
 [ext_resource type="Texture2D" uid="uid://cte2oo65m6alb" path="res://assets/brackeys_platformer_assets/sprites/Dracula's Castle(320X180).png" id="8_ifrie"]
-[ext_resource type="Texture2D" uid="uid://cfyia6em3ywfb" path="res://assets/brackeys_platformer_assets/sprites/Textures-16.png" id="2_fvtu5"]
+[ext_resource type="PackedScene" uid="uid://be8ysqg8rpjvh" path="res://area_2d.tscn" id="11_8rpm8"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_h38c7"]
 distance = -51.0
@@ -138,11 +138,6 @@ texture = ExtResource("1_hdlau")
 2:2/0 = 0
 2:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 2:2/0/physics_layer_0/angular_velocity = 0.0
-
-
-
-
-
 0:3/0 = 0
 0:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:3/0/physics_layer_0/angular_velocity = 0.0
@@ -21089,6 +21084,21 @@ _data = {
 "arkho euta": SubResource("Animation_pckb7")
 }
 
+[sub_resource type="Animation" id="Animation_te10n"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(11520, -1172)]
+}
+
 [sub_resource type="Animation" id="Animation_tkqnr"]
 resource_name = "new_animation"
 length = 2.0
@@ -21104,21 +21114,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(11520, -1172), Vector2(11744, -1172)]
-}
-
-[sub_resource type="Animation" id="Animation_te10n"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(11520, -1172)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_xx7ve"]
@@ -21203,6 +21198,21 @@ _data = {
 "new_animation": SubResource("Animation_6td2e")
 }
 
+[sub_resource type="Animation" id="Animation_gw7ah"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(12855, -1088)]
+}
+
 [sub_resource type="Animation" id="Animation_k2lch"]
 resource_name = "new_animation"
 length = 0.6
@@ -21218,21 +21228,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Vector2(12855, -1136), Vector2(12855, -1040), Vector2(12855, -1136)]
-}
-
-[sub_resource type="Animation" id="Animation_gw7ah"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(12855, -1088)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_kya66"]
@@ -21372,3 +21367,174 @@ libraries = {
 "": SubResource("AnimationLibrary_kya66")
 }
 autoplay = "new_animation"
+
+[node name="trash" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(37, 10)
+
+[node name="Trash" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(191, 9)
+
+[node name="Trash2" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(561, 45)
+
+[node name="Trash3" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(438, -6)
+
+[node name="Trash4" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(846, 43)
+
+[node name="Trash5" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(1174, 89)
+
+[node name="Trash6" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(1574, 43)
+
+[node name="Trash7" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(1432, 11)
+
+[node name="Trash8" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(2055, -36)
+
+[node name="Trash9" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(2423, 28)
+
+[node name="Trash10" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(2647, -52)
+
+[node name="Trash11" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(3063, -5)
+
+[node name="Trash12" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(3734, -311)
+
+[node name="Trash13" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(3360, -200)
+
+[node name="Trash14" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(4235, -425)
+
+[node name="Trash15" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(4454, -563)
+
+[node name="Trash16" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(4951, -662)
+
+[node name="Trash17" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(4933, -662)
+
+[node name="Trash18" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(5751, -616)
+
+[node name="Trash19" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(6374, -964)
+
+[node name="Trash20" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(7029, -871)
+
+[node name="Trash21" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(7270, -869)
+
+[node name="Trash22" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(7589, -967)
+
+[node name="Trash23" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(7813, -1068)
+
+[node name="Trash24" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(7973, -1144)
+
+[node name="Trash25" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(8231, -1095)
+
+[node name="Trash26" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(10305, -1048)
+
+[node name="Trash27" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(10775, -1048)
+
+[node name="Trash28" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(11384, -1275)
+
+[node name="Trash29" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(11734, -1071)
+
+[node name="Trash30" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(11954, -873)
+
+[node name="Trash31" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(12337, -913)
+
+[node name="Trash32" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(12518, -1031)
+
+[node name="Trash33" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(12758, -1192)
+
+[node name="Trash34" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(13126, -1071)
+
+[node name="Trash35" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(13337, -1105)
+
+[node name="Trash36" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(13608, -1052)
+
+[node name="Trash37" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(13768, -1021)
+
+[node name="Trash38" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(14342, -991)
+
+[node name="Trash39" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(14070, -986)
+
+[node name="Trash40" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(14515, -933)
+
+[node name="Trash41" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(12234, -711)
+
+[node name="Trash42" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(12300, -712)
+
+[node name="Trash43" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(12232, -736)
+
+[node name="Trash44" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(12253, -715)
+
+[node name="Trash45" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(12261, -738)
+
+[node name="Trash46" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(12277, -712)
+
+[node name="Trash47" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(12280, -736)
+
+[node name="Trash48" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(12235, -758)
+
+[node name="Trash49" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(12259, -760)
+
+[node name="Trash50" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(12238, -784)
+
+[node name="Trash51" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(12262, -787)
+
+[node name="Trash52" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(12285, -763)
+
+[node name="Trash53" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(12303, -735)
+
+[node name="Trash54" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(12309, -763)
+
+[node name="Trash55" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(12287, -786)
+
+[node name="Trash56" parent="." instance=ExtResource("11_8rpm8")]
+position = Vector2(12313, -791)
