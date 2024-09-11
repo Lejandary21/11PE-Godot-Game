@@ -7,6 +7,7 @@ const JUMP_VELOCITY = -400.0
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
+#var death_pos = Vector2(-76, -16)
 @onready var animated_sprite = $AnimatedSprite2D
 
 func _physics_process(delta):
@@ -21,6 +22,7 @@ func _physics_process(delta):
 # Get the input direction: -1, 0, 1
 	var direction = Input.get_axis("move_left", "move_right")
 	
+	print(direction)
 	#Flip the sprite
 	if direction > 0:
 		animated_sprite.flip_h = false
@@ -41,5 +43,8 @@ func _physics_process(delta):
 		velocity.x = direction * SPEED
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
-
+	
+	#if position.y > 100:
+	#	position = death_pos
+		
 	move_and_slide()

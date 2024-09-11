@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://cjnv2hwlhgygk"]
+
+[ext_resource type="Script" path="res://assets/brackeys_platformer_assets/sprites/patay.gd" id="1_fboj8"]
+
+[node name="patay" type="Area2D"]
+script = ExtResource("1_fboj8")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.6
+one_shot = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
