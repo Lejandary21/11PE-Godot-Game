@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=3 uid="uid://cm1d6e2iudwn5"]
+[gd_scene load_steps=47 format=3 uid="uid://cm1d6e2iudwn5"]
 
 [ext_resource type="Texture2D" uid="uid://c0ofkwwie1odo" path="res://assets/brackeys_platformer_assets/sprites/platforms.png" id="1_hdlau"]
 [ext_resource type="PackedScene" uid="uid://dp6b0hkufeoq6" path="res://peter.tscn" id="1_jtf6k"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://dylr3jxce6eh1" path="res://assets/brackeys_platformer_assets/sprites/1985_reference.png" id="6_pnl8a"]
 [ext_resource type="PackedScene" uid="uid://cab13llthy138" path="res://scenes/platform.tscn" id="7_43s0p"]
 [ext_resource type="Texture2D" uid="uid://cte2oo65m6alb" path="res://assets/brackeys_platformer_assets/sprites/Dracula's Castle(320X180).png" id="8_ifrie"]
+[ext_resource type="PackedScene" uid="uid://c0d76ahasptp3" path="res://trash.tscn" id="11_5b6ln"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_h38c7"]
 distance = -51.0
@@ -21343,7 +21344,7 @@ libraries = {
 autoplay = "new_animation"
 
 [node name="Peter" parent="." instance=ExtResource("1_jtf6k")]
-position = Vector2(8482, -1123)
+position = Vector2(-115, -22)
 
 [node name="Camera2D" type="Camera2D" parent="Peter"]
 position = Vector2(13, -16)
@@ -21366,3 +21367,108 @@ libraries = {
 "": SubResource("AnimationLibrary_kya66")
 }
 autoplay = "new_animation"
+
+[node name="trash" parent="." instance=ExtResource("11_5b6ln")]
+position = Vector2(119, 13)
+
+[node name="Area2D2" parent="." instance=ExtResource("11_5b6ln")]
+position = Vector2(380, -16)
+
+[node name="Area2D3" parent="." instance=ExtResource("11_5b6ln")]
+position = Vector2(688, 39)
+
+[node name="Area2D4" parent="." instance=ExtResource("11_5b6ln")]
+position = Vector2(951, 75)
+
+[node name="Area2D5" parent="." instance=ExtResource("11_5b6ln")]
+position = Vector2(1181, 93)
+
+[node name="Area2D6" parent="." instance=ExtResource("11_5b6ln")]
+position = Vector2(1414, 12)
+
+[node name="Area2D7" parent="." instance=ExtResource("11_5b6ln")]
+position = Vector2(1579, 48)
+
+[node name="Area2D8" parent="." instance=ExtResource("11_5b6ln")]
+position = Vector2(2061, -36)
+
+[node name="Area2D9" parent="." instance=ExtResource("11_5b6ln")]
+position = Vector2(2433, 29)
+
+[node name="Area2D10" parent="." instance=ExtResource("11_5b6ln")]
+position = Vector2(2653, -48)
+
+[node name="Area2D11" parent="." instance=ExtResource("11_5b6ln")]
+position = Vector2(3068, 1)
+
+[node name="Area2D12" parent="." instance=ExtResource("11_5b6ln")]
+position = Vector2(3306, -111)
+
+[node name="Area2D13" parent="." instance=ExtResource("11_5b6ln")]
+position = Vector2(3742, -306)
+
+[node name="Area2D14" parent="." instance=ExtResource("11_5b6ln")]
+position = Vector2(4460, -560)
+
+[node name="Area2D15" parent="." instance=ExtResource("11_5b6ln")]
+position = Vector2(4937, -657)
+
+[node name="Area2D16" parent="." instance=ExtResource("11_5b6ln")]
+position = Vector2(4961, -656)
+
+[node name="Area2D17" parent="." instance=ExtResource("11_5b6ln")]
+position = Vector2(5176, -556)
+
+[node name="Area2D18" parent="." instance=ExtResource("11_5b6ln")]
+position = Vector2(5757, -611)
+
+[node name="Area2D19" parent="." instance=ExtResource("11_5b6ln")]
+position = Vector2(5779, -804)
+
+[node name="Area2D20" parent="." instance=ExtResource("11_5b6ln")]
+position = Vector2(5957, -833)
+
+[node name="Area2D21" parent="." instance=ExtResource("11_5b6ln")]
+position = Vector2(6128, -523)
+
+[node name="Area2D22" parent="." instance=ExtResource("11_5b6ln")]
+position = Vector2(6377, -958)
+
+[node name="Area2D23" parent="." instance=ExtResource("11_5b6ln")]
+position = Vector2(7153, -867)
+
+[node name="Area2D24" parent="." instance=ExtResource("11_5b6ln")]
+position = Vector2(7278, -869)
+
+[node name="Area2D25" parent="." instance=ExtResource("11_5b6ln")]
+position = Vector2(7409, -754)
+
+[node name="Area2D26" parent="." instance=ExtResource("11_5b6ln")]
+position = Vector2(7405, -1007)
+
+[node name="Area2D27" parent="." instance=ExtResource("11_5b6ln")]
+position = Vector2(7819, -1067)
+
+[node name="Area2D28" parent="." instance=ExtResource("11_5b6ln")]
+position = Vector2(12245, -703)
+
+[node name="Area2D29" parent="." instance=ExtResource("11_5b6ln")]
+position = Vector2(12277, -701)
+
+[node name="Area2D30" parent="." instance=ExtResource("11_5b6ln")]
+position = Vector2(12244, -730)
+
+[node name="Area2D" parent="." instance=ExtResource("11_5b6ln")]
+position = Vector2(12304, -706)
+
+[node name="Area2D31" parent="." instance=ExtResource("11_5b6ln")]
+position = Vector2(12337, -707)
+
+[node name="Area2D32" parent="." instance=ExtResource("11_5b6ln")]
+position = Vector2(12273, -728)
+
+[node name="Area2D33" parent="." instance=ExtResource("11_5b6ln")]
+position = Vector2(12301, -734)
+
+[node name="Area2D34" parent="." instance=ExtResource("11_5b6ln")]
+position = Vector2(12326, -737)
