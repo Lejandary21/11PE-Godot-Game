@@ -21487,7 +21487,13 @@ position = Vector2(12337, -707)
 position = Vector2(12273, -728)
 
 [node name="Area2D33" parent="." instance=ExtResource("11_5b6ln")]
+position = Vector2(12299, -738)
+
+[node name="Area2D33" parent="Area2D33" instance=ExtResource("11_5b6ln")]
 position = Vector2(12301, -734)
 
 [node name="Area2D34" parent="." instance=ExtResource("11_5b6ln")]
 position = Vector2(12326, -737)
+
+[node name="Area2D35" parent="." instance=ExtResource("11_5b6ln")]
+position = Vector2(12246, -757)
